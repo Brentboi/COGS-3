@@ -1,0 +1,51 @@
+body{
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    max-width: 100%;
+    padding-top: 50px;
+}
+
+h1,p,summary{
+    color:white;
+}
+
+article h1{
+    font-size: 50px;
+}
+
+article p{
+    font-size: 25px;
+}
+img{
+    max-width: 75%;
+    width: 540px;
+    height: auto;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+}
+div{
+    text-align: center;
+}
+
+.test{
+    width: 50%;
+    font-size: 50px;
+    color: white;
+}
+
+.anchor{
+    display: block;
+    height: 115px; /*same height as header*/
+    margin-top: -115px; /*same height as header*/
+    visibility: hidden;
+  }
+
+details p{
+    font-size: 18px;
+}
+
+footer p{
+    text-align: center;
+}

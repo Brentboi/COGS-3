@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!--
+	SAVE and RENAME THIS FILE TO MATCH THE ASSIGNMENT REQUIREMENTS:
+		cg3xzz_jsPartB.html
+	
+	SAVE AND RENAME THE CSS FILE (AND REFERENCES - LINK TAG) TO MATCH THE ASSIGNMENT REQUIREMENTS:
+		cg3xzz_jsPartBStyle.css
+		
+	SAVE AND RENAME THE JS FILE (AND REFERENCES - LINK TAG) TO MATCH THE ASSIGNMENT REQUIREMENTS:
+		cg3xzz_jsPartBStyle.js  (see bottom of page)
+	-->
+		<title>COGS3 | JS Homework</title>
+		<link rel="stylesheet" type="text/css" href="css/cg3wej_jsPartBStyle.css">
+	</head>
+
+
+	<body>
+
+    <!--
+      IN THIS HTML FILE YOU SHOULDN'T HAVE TO CHANGE MUCH AT ALL. MOSTLY YOU WILL JUST
+      NEED TO DEFINE AN EVENT FOR THE THREE BUTTONS BELOW. YOU ARE FREE TO CHANGE THE
+      CSS FILE THAT IS ALREADY LINKED UP BUT YOU DO NOT NEED TO.
+
+      MOSTLY, WE WILL BE LOOKING TO MAKE SURE THAT YOU ARE ABLE TO WRITE UP A FEW
+      SIMPLE JAVASCRIPT FUNCTIONS, WHICH YOU SHOULD DO IN THE STYLE.JS FILE (WHICH
+      IS ALSO ALREADY LINKED UP FOR YOU).
+    -->
+
+	  <div id="wrapper">
+
+      <!-- THIS H1 ELEMENT SHOULD NOT BE CHANGED DIRECTLY, YOU ARE ONLY ALLOWED TO
+            CHANGE THE INNERHTML OF THIS ELEMENT VIA JAVASCRIPT -->
+      <div id="counter-wrapper">
+    	  <h1 id="counter">0</h1>
+      </div>
+
+
+      <!-- WRAPPER FOR OUR INCR AND DECR BUTTONS -->
+  	  <section id="buttons">
+
+
+        <!-- CLICKING THIS BUTTON SHOULD DECREASE THE NUMBER IN THE COUNTER
+              H1 TAG BY 1. NOTE, THAT IF YOU TRY TO DECREASE BELOW 0 YOU SHOULD
+              SHOW A POPUP WARNING THE USER THAT THEY CANNOT DO THIS. -->
+        <div id="left"><button id="decr" class="btn" onclick="decr()">Decrease</button></div>
+
+
+        <!-- CLICKING THE INCREASE BUTTON SHOULD INCREMENT THE COUNTER BY ONE. THERE IS
+          NO LIMIT ON THIS NUMBER, IT CAN INCREASE FOREVER. -->
+    	  <div id="right"><button id="incr" class="btn" onclick="incr()">Increase</button></div>
+
+
+      </section>
+
+      <!-- CLICKING THIS BUTTON TAKES YOU TO YOUR FINISHED CODECADEMY PROFILE. YOU
+      CANNOT USE A HYPERLINK FOR THIS PART. YOU MUST REDIRECT THE USER VIA JAVASCRIPT. -->
+      <div id="leave-wrapper">
+        <button id="leave" class="btn btn-primary" onclick="redir()">Leave</button>
+      </div>
+
+
+	  </div>
+	</body>
+	<script src="js/cg3wej_jsPartBStyle.js"></script>
+</html>

@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <title>Photoshop Slideshow</title>
+        <link rel="stylesheet" type="text/css" href="cg3wej_slideshow.css">
+        <script>
+            var photoArray = new Array();
+            var photoName = new Array();
+            var photoCaption = new Array();
+            var index = 0;
+            var cycleOn = false;
+
+            function cycleSwitch()
+            {
+                if (cycleOn == true)
+                {
+                    cycleOn = false;
+                    document.getElementById('cycleButton').innerHTML = 'Start Cycle';
+                    return;
+                }
+                else if(cycleOn == false)
+                {
+                    cycleOn = true;
+                    document.getElementById('cycleButton').innerHTML = 'Stop Cycle';
+                    cycle();
+                }
+                return;
+            }
+            function cycle()
+            {
+                if(cycleOn == false)
+                {
+                    return;
+                }
+                index++;
+                if(index > 8)
+                {
+                    index = 0;
+                }
+                document.banner.src =photoArray[index].src;
+                document.getElementById('photoName').innerHTML = photoName[index];
+                document.getElementById('photoCap').innerHTML = photoCaption[index];
+                document.getElementById('counter').innerHTML = 'Slide #' + (index + 1);
+                setTimeout("cycle()",5000);
+                return;
+            }
+
+            function prevImg()
+            {
+                cycleOn = false;
+                document.getElementById('cycleButton').innerHTML = 'Start Cycle';
+                index--;
+                if(index < 0)
+                    index = photoArray.length-1;
+                document.banner.src =photoArray[index].src;
+                document.getElementById('photoName').innerHTML = photoName[index];
+                document.getElementById('photoCap').innerHTML = photoCaption[index];
+                document.getElementById('counter').innerHTML = 'Slide #' + (index + 1);
+                return;
+            }
+
+            function nextImg()
+            {
+                cycleOn = false;
+                document.getElementById('cycleButton').innerHTML = 'Start Cycle';
+                index++;
+                if(index > photoArray.length-1)
+                    index = 0;
+                document.banner.src =photoArray[index].src;
+                document.getElementById('photoName').innerHTML = photoName[index];
+                document.getElementById('photoCap').innerHTML = photoCaption[index];
+                document.getElementById('counter').innerHTML = 'Slide #' + (index + 1);
+                return;
+            }
+            function startup()
+            {
+                index = -1;
+                photoArray[0] = new Image;
+                photoArray[1] = new Image;
+                photoArray[2] = new Image;
+                photoArray[3] = new Image;
+                photoArray[4] = new Image;
+                photoArray[5] = new Image;
+                photoArray[6] = new Image;
+                photoArray[7] = new Image;
+                photoArray[8] = new Image;
+
+                photoArray[0].src = "images/Tutorial 1 Webpage.png"
+                photoArray[1].src = "images/Tutorial 1 Progress.png"
+                photoArray[2].src = "images/Tutorial 1 Finished.png"
+                photoArray[3].src = "images/Tutorial 2 Webpage.png"
+                photoArray[4].src = "images/Tutorial 2 Progress.png"
+                photoArray[5].src = "images/Tutorial 2 Finished.png"
+                photoArray[6].src = "images/Tutorial 3 Webpage.png"
+                photoArray[7].src = "images/Tutorial 3 Progress.png"
+                photoArray[8].src = "images/Tutorial 3 Finished.gif"
+                
+                photoName[0] = "Tutorial 1 Webpage"
+                photoName[1] = "Tutorial 1 Progress"
+                photoName[2] = "Tutorial 1 Finished"
+                photoName[3] = "Tutorial 2 Webpage"
+                photoName[4] = "Tutorial 2 Progress"
+                photoName[5] = "Tutorial 2 Finished"
+                photoName[6] = "Tutorial 3 Webpage"
+                photoName[7] = "Tutorial 3 Progress"
+                photoName[8] = "Tutorial 3 Finished"
+
+                photoCaption[0] = "I chose this tutorial since I like using technology and it seemed like it had a techy look to it. <a href=\"https://design.tutsplus.com/tutorials/easy-digital-glitch-text-effect--cms-28798\" target=\"_blank\">Link</a>"
+                photoCaption[1] = "I learned that a lot of the cool fonts we see in images and graphics can be made simply using things like photoshop and filters!"
+                photoCaption[2] = "Here's my finished product. It's a poster for a horror movie called Glitch. I got my inspiration from movies like \"White Noise\" and my interest in computers."
+                photoCaption[3] = "I chose this tutorial because it seemed interesting and simple compared to the rest of the tutorials. <a href=\"https://design.tutsplus.com/tutorials/create-a-strawberry-lips-effect-with-photoshop--cms-28583\" target=\"_blank\">Link</a>"
+                photoCaption[4] = "Through this I learned how to manipulate photos through creating image masks to allow only what I let the photo have be seen."
+                photoCaption[5] = "My finished product is the Strawberry-Banana! I thought this would be cool to make since a lot of people like Strawberry-Banana shakes and other products. It probably looks and tastes better blended."
+                photoCaption[6] = "This last tutorial... well this was the only choice tutorial in the category. <a href=\"https://www.youtube.com/watch?v=2DU0Sim_BJ4\" target=\"_blank\">Link</a>"
+                photoCaption[7] = "I had already learned how to make gifs or animations before because I used to do sprite animations back in high school, but I learned how to make a animation using a video in photoshop with this tutorial."
+                photoCaption[8] = "I just thought that would be a cool thing to do honestly, but it didn't turn out that great. I had some other ideas like a bouncing basketball, but I learned it's difficult to do that."
+                return;
+            }
+
+            function titlePage()
+            {
+                cycleOn = false;
+                index = -1;
+                document.banner.src = 'images/0.jpg';
+                document.getElementById('photoName').innerHTML = 'Hi! This is my journey with our photoshop assignment, hope you enjoy!';
+                document.getElementById('photoCap').innerHTML = '(Sorry photos were scaled down to make it look nicer, if you want to see them in original resolution goto the <a href=\"http://acsweb.ucsd.edu/~cg3wej/photoshop_slideshow/images/\" target=\"_blank\">images folder</a>) the Click one of the buttons to begin';
+                document.getElementById('counter').innerHTML = 'Title';
+                return;
+            }
+
+        </script>
+    </head>
+    <body onload="startup()">
+        <!--<h1 align ="center">These are some of my favorite foods</h1>!-->
+        <h1 id= 'photoName' align = "center">Hi! This is my journey with our photoshop assignment, hope you enjoy!</h2>
+        <div align ="center">
+            <img name="banner" src ="images/0.jpg">
+        </div>
+        <h3 id = 'photoCap' align= "center">(Sorry photos were scaled down to make it look nicer, if you want to see them in original resolution goto the <a href="http://acsweb.ucsd.edu/~cg3wej/photoshop_slideshow/images/" target="_blank">images folder</a>) the Click one of the buttons to begin</h3>
+        <div align= "center">
+            <button type="button" onclick="titlePage()">Back to the Title</button>
+            <button type="button" onclick="prevImg()">Previous Slide</button>
+            <button type="button" id='cycleButton' onclick="cycleSwitch()">Start Cycle</button>
+            <button type="button" onclick="nextImg()">Next Slide</button>
+            <button id= "counter" type="button">Title</button>
+        </div>
+    </body>
+</html>

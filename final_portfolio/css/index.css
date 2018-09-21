@@ -1,0 +1,51 @@
+body{
+    background-image: url("../images/background.jpg");
+    padding-top: 50px;
+    background-color: darkslategray;
+}
+
+section{
+    color:black;
+}
+
+p{
+    color:black;
+    font-size: 25px;
+}
+section a{
+    color:white;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+section h1{
+    font-size: 40px;
+    color:black;
+    text-decoration: underline;
+}
+
+img{
+    max-width: 40%;
+    width: 40%;
+    height: auto;
+}
+
+div{
+    text-align: center;
+}
+
+
+.anchor{
+    display: block;
+    height: 115px; /*same height as header*/
+    margin-top: -115px; /*same height as header*/
+    visibility: black;
+  }
+
+details p{
+    font-size: 18px;
+}
+
+footer p{
+    text-align: center;
+}

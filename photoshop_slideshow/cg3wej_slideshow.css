@@ -1,0 +1,46 @@
+body{
+    background-color: blue;
+    color: white;
+}
+h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bolder;
+    padding: 1px;
+    border-color: silver;
+    border-style: double;
+    border-left-width: 5px;
+    border-right-width: 5px;
+}
+h2,h3,h4,h5,h6 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 1px;
+    border-color: silver;
+    border-style: double;
+    border-left-width: 5px;
+    border-right-width: 5px;
+}
+
+button{
+    border-radius: 5px;
+    font-family: Arial;
+    font-size: 20px;
+}
+img{
+    width: 960px;
+    height: 540px;
+}
+
+a:visited{
+    color: rgb(243, 243, 243);
+}
+a{
+    color:white;
+}

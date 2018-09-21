@@ -1,0 +1,83 @@
+body{
+    background-color: blue;
+    color: white;
+}
+caption{
+    font-family: Arial;
+    font-size:30px;
+    font-weight: bolder;
+    background-color: black;
+    color:white;
+    border-style: double;
+    text-align: center;
+    border-radius: 5px;
+}
+
+img{
+    max-height: 125px;
+    max-width: auto;
+    align-content: center;
+}
+th {
+    font-family: Arial;
+    font-style: inherit;
+    font-size: 15px;
+    font-weight: bolder;
+    color:white;
+    background-color: black;
+    border-color: silver;
+    border-style: double;
+    border-left-width: 5px;
+    border-right-width: 5px;
+}
+th.first{
+    border-top-left-radius: 5px;
+    border-left-width: 5px;
+}
+th.last{
+    border-top-right-radius: 5px;
+    border-right-width: 5px;
+}
+
+th.time{
+    font-family: Arial;
+    font-style: inherit;
+    font-weight: bolder;
+    font-size: 15px;
+    color:white;
+    background-color: black;
+    border-color: silver;
+    border-style: double;
+    border-left-width: 5px;
+    border-right-width: 5px;
+
+}
+td,h1,h2,h3,h4,h5,h6 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 1px;
+    border-color: silver;
+    border-style: double;
+    border-left-width: 5px;
+    border-right-width: 5px;
+}
+a {
+    color: white;
+}
+a:visited{
+    color: purple;
+}
+a:hover{
+    color: red;
+    cursor: crosshair;
+}
+a{
+    color: white;
+}
+a:active{
+    color: green;
+}

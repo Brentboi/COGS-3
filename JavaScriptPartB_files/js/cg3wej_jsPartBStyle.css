@@ -1,0 +1,60 @@
+/*------------------------------------
+  THE ONLY THING YOU MUST CHANGE IS THE 
+  FILE NAME TO MATCH THE ASSIGNMENT REQUIREMENTS
+  THE NAME OF THIS FILE SHOULD BE:
+  cg3xzz_jsPartBStyle.css
+  
+  YOU WILL NOT NEED TO CHANGE ANYTHING 
+  ELSE IN THIS CSS FILE - 
+  BUT FEEL FREE TO DO SO IF YOU'D LIKE
+------------------------------------*/
+
+body {
+  width: 100%;
+}
+
+#counter-wrapper {
+  width: 100%;
+  font-family: Arial;
+}
+
+#counter {
+  text-align: center;
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+
+#buttons {
+  width: 400px;
+  height: 50px;
+  margin: 0px auto;
+}
+
+#left, #right {
+  width: 50%;
+  float: left;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  height: 40px;
+  width: 100%;
+  font-family: Arial;
+  font-size: 18px;
+}
+
+#decr {
+  background-color: maroon;
+}
+
+#leave-wrapper {
+  width: 400px;
+  margin: 0px auto;
+}
+
+#leave {
+  width: 400px;
+  margin: 0px auto;
+  background-color: silver;
+}

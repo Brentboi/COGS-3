@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Banner</title>
+        <script>
+            var imgArray = new Array();
+            var index = 0;
+            function cycle()
+            {
+                document.banner.src =imgArray[index].src;
+                index++;
+                if(index > 5)
+                {
+                    index = 0;
+                }
+                setTimeout("cycle()",3000);
+                return;
+            }
+            function startup()
+            {
+                imgArray[0] = new Image;
+                imgArray[1] = new Image;
+                imgArray[2] = new Image;
+                imgArray[3] = new Image;
+                imgArray[4] = new Image;
+                imgArray[5] = new Image;
+
+                imgArray[0].src = "images/1.jpeg"
+                imgArray[1].src = "images/2.jpg"
+                imgArray[2].src = "images/3.jpg"
+                imgArray[3].src = "images/4.jpg"
+                imgArray[4].src = "images/5.jpg"
+                imgArray[5].src = "images/6.jpg"
+
+                cycle();
+                return;
+            }
+        </script>
+    </head>
+    <body onload="startup()">
+        <div align ="center">
+            <img name="banner" src ="images/1.jpeg">
+        </div>
+    </body>
+</html>
